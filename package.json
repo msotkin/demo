@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack -w & node server.js"
+    "start": "./node_modules/.bin/webpack -w & node server/server.js"
   },
   "author": "Michael Sotkin",
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
-    "interact-js": "^2.0.1",
-    "interact.js": "^1.2.6",
+    "file-loader": "^0.9.0",
+    "razorframe": "^1.0.19",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
