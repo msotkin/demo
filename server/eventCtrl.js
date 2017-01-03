@@ -1,4 +1,4 @@
-
+const db = require('./database');
 // require razorframe to add error-handling functionality
 // const { rz } = require('../../razorframe/lib/Razorframe.js');
 const { rz } = require('razorframe');
@@ -7,7 +7,7 @@ module.exports = {
 
   addToDb: (MSG) => {
     console.log(`function addToDb argument: ${MSG.contents}`);
-    let text = JSON.stringify(MSG.contents);
+    let text = MSG.contents;
     db.conn.query(`
     INSERT INTO events 
     (_id, string )
